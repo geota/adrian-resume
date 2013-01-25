@@ -1,0 +1,96 @@
+%-----------------------------------------
+% Adrian Maceiras
+% Resumé
+%
+% URL: http://github.com/geota/resume
+% Original template by: Michael Wright
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+\moderncvtheme[burntorange]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% Remove % to set to different fonts
+%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Information 
+\firstname{Adrian}
+\familyname{Maceiras}
+\address{3906 Carmel Dr.}{Austin, TX 78721}
+\mobile{(512) 289-9189}
+\email{amac425@utexas.edu}
+\homepage{https://github.com/geota}
+%
+
+\title{Adrian Maceiras' Resume}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+\section{Education}
+\cventry{2011--2013 (expected)}{Computer Science \& Geography, University of Texas}{Austin, TX}{}{}{ CS GPA: 4.0, Overall GPA: 3.1, LSAT: 177 - 99.8 percentile.}
+\cvline{2005--2009} {Bachelor of Arts in Geography.}
+\cvline{2005--2009}{University of Texas Scholarship.}
+\cvline{2005}{National Hispanic Merit Scholarship}
+\cvline{2011}{Northwestern University Law School Scholarship - declined.}
+\cvline{2011}{Sarah T. Hughes Diversity Scholarship - declined.}
+\section{Computer Skills} 
+  \cvline{Languages:}{Java, C++, PHP, Javascript, Ruby}
+  \cvline{Functional Knowledge:}{Python, Rails, MongoDB, SQL, SOAP/REST, jQuery, HTML5, CSS3,  Doxygen}
+\section{Experience} 
+  \cventry{November 2012--Present}{Skynet Developer Intern}{SFCG}{Austin, TX}{}{
+    \begin{itemize}
+      \item Implemented numerous CRUD web applications for customers' Oracle CRM implementations.
+      \item Implemented an internally used Google Maps API Marker Manager library. 
+      \item Extended the Skynet web layer to support additional SOAP operations.
+      \item Spearheaded effort to use git and Bitbucket for SCM.
+    \end{itemize}
+  }
+  \cventry{August 2006 --\\March 2012}{Admissions Assistant}{Austin Community College}{}{}{
+    \begin{itemize}
+      \item Assisted students in issues pertaining to admissions, registration, and access to their educational records.
+      \item Assisted in design phase for the TREX electronic transcript submission system. 
+    \end{itemize}
+  }
+  \cventry{March 2010 --\\October 2010}{Intern}{David Kallus Attorney at Law}{The Woodlands, TX}{}{
+    \begin{itemize}
+      \item Drafted settlement agreements, pleadings, and motions.
+      \item Conducted legal research using WestLaw.
+      \item Organized and categorized documents acquired through pre-trial discovery.
+    \end{itemize}
+  }
+\section{Other}
+  \cvlistitem{Contributor to mongo-tools - see \url{https://github.com/brandonblack/mongo-tools}}
+  \cvlistitem{pystocktracker - Simple stock portfolio monitor - see \url{https://github.com/geota/pystocktracker}}
+  \cvlistitem{Facebook Open Source Curriculum Hackathon participant.}
+  \cvlistitem{Student Member of the Association for Computing Machinery.}
+  \cvlistitem{LSAT Tutor.}
+\end{document}
+
